@@ -4,20 +4,19 @@ using UnityTemplateProjects;
 
 namespace EditorUISamples
 {
-    public class EditorWindowSObackend : EditorWindow
+    public class EditorWindowSOdata : EditorWindow
     {
         [MenuItem(menuItemRoot + "Scriptable Object Data")]
         static void ShowWindow()
         {
-            var window = GetWindow<EditorWindowSObackend>();
+            var window = GetWindow<EditorWindowSOdata>();
         }
 
         protected const string menuItemRoot = "My UI Samples/";
 
         private void OnEnable()
         {
+            
         }
-
-        protected ScriptableObject currentDataUsed;
     }
 }
