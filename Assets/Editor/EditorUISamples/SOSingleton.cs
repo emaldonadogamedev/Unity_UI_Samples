@@ -1,8 +1,21 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
+using UnityEngine;
 
-namespace Assets.Editor.EditorUISamples
+namespace EditorUISamples
 {
     class SOSingleton : ScriptableSingleton<SOSingleton>
     {
+        public string fileName = "";
+
+        public string[] stringArray;
+
+        [NonSerialized]
+        public string fileNameProtected = "9880";
+
+        public UnityEngine.Object someObject;
+
+        [SerializeField]
+        protected int intData = 90;
     }
 }
