@@ -1,9 +1,9 @@
 using UnityEditor;
 using UnityEngine;
-using UnityTemplateProjects;
-
-using EditorUISamples.Components;
 using UnityEngine.UIElements;
+
+using EditorUISamples.DataTypes;
+using EditorUISamples.Components;
 
 namespace EditorUISamples
 {
@@ -28,7 +28,7 @@ namespace EditorUISamples
 
             sv.Add(new SerializedObjectConatiner(m_windowData));
 
-            this.rootVisualElement.Add(sv);
+            rootVisualElement.Add(sv);
         }
     }
 }

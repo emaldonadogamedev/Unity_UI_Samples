@@ -21,7 +21,7 @@ namespace EditorUISamples
 
         private void OnEnable()
         {
-            camRect = new Rect(0f, 0f, this.position.width, this.position.height);
+            camRect = new Rect(0f, 0f, position.width, position.height);
             SceneView.duringSceneGui += SceneGUI;
         }
 
@@ -77,15 +77,9 @@ namespace EditorUISamples
             Handles.EndGUI();
         }
 
-        private void Update()
-        {
-        }
-
         private void OnDestroy()
         {
             this.OnLostFocus();
         }
-
-        protected ScriptableObject currentDataUsed;
     }
 }
