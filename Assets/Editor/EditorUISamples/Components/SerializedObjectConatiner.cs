@@ -34,6 +34,7 @@ namespace EditorUISamples.Components
 
         public void Dispose()
         {
+            this.Unbind();
             serializedObject?.Dispose();
         }
     }
